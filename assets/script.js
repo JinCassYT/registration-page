@@ -7,7 +7,22 @@ const formPasswordC = document.getElementById("formPasswordC");
 
 confirmbutton.addEventListener("click", (event) => {
   event.preventDefault();
-  alert(
-    "Parebens,você acaba de se cadastrar,espero que goste e adquira bastante conhecimento. "
-  );
+  checkInputs();
 });
+
+function checkInputs() {
+  const formNamevalue = formName.value;
+  console.log(formNamevalue);
+
+  const formEmailvalue = formEmail.value;
+  console.log(formEmailvalue);
+
+  const userNamevalue = userName.value;
+  console.log(userNamevalue);
+
+  const formPasswordvalue = formPassword.value;
+  console.log(formPassword);
+
+  const formPasswordCvalue = formPasswordC.value;
+  console.log(formPasswordCvalue);
+}
