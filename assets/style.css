@@ -3,8 +3,9 @@
   padding: 0;
 }
 body {
-  background-color: rgb(235, 235, 235);
-  margin: 10em;
+  background-color: rgb(255, 255, 255);
+  margin: 8em 15em;
+  max-width: 100vh;
 }
 h1 {
   color: black;
@@ -22,9 +23,111 @@ h2 {
 form {
   display: grid;
   justify-content: end;
-  gap: 2em;
+  gap: 1.5em;
 }
 img {
+  max-width: 100%;
   float: left;
   border-radius: 1em;
+}
+input {
+  padding: 1em;
+  border-radius: 1em;
+  border-style: none;
+}
+#confirmbutton:hover {
+  background-color: #ffdd45;
+}
+footer {
+  margin-top: 5em;
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+/* Telas menores que 1290px (tablets e desktops menores) */
+@media (max-width: 1290px) {
+  img {
+    max-width: 70%;
+  }
+}
+
+/* Telas menores que 1024px (tablets e desktops menores) */
+@media (max-width: 1024px) {
+  body {
+    margin: 5em 10em;
+  }
+
+  h2 {
+    margin-right: 2em;
+  }
+
+  .loginForm {
+    padding: 2em;
+    border-radius: 2em;
+  }
+}
+
+/* Telas menores que 768px (celulares e tablets pequenos) */
+@media (max-width: 768px) {
+  body {
+    margin: 3em 5em;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  h2 {
+    margin-top: 1em;
+    margin-right: 1em;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .loginForm {
+    padding: 1.5em;
+    border-radius: 1.5em;
+  }
+
+  form {
+    justify-content: center; /* Centraliza o formulário */
+  }
+
+  img {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  input {
+    padding: 0.8em;
+  }
+}
+
+/* Telas menores que 480px (celulares pequenos) */
+@media (max-width: 480px) {
+  body {
+    margin: 1em;
+  }
+
+  .loginForm {
+    padding: 1em;
+    border-radius: 1em;
+  }
+
+  h1,
+  h2 {
+    margin-top: 1em;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  input {
+    padding: 0.5em;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
 }
